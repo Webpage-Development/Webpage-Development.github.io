@@ -1,66 +1,20 @@
-/* Style the header with a grey background and some padding */
+
 .header {
   overflow: hidden;
   background-color: #caf0f8;
-  padding: 20px 10px;
-  padding-left: 575px;
+  padding: 20px 10px; 
   text-align: center;
-}
-
-
-
-/* Style the header links */
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 25px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 30px;
-  font-weight: bold;
-  
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: #ddd;
   color: #03045e;
-}
-
-/* Style the active/current link*/
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
-/* Float the link section to the right */
-.header-right {
-  float: right;
-}
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 
 
 
-
+/* Navbar*/
 
 .top {
     background-color: #03045e;
@@ -77,6 +31,10 @@
     text-decoration: none;
     font-size: 17px;
   }
+
+  .top .log{
+    padding-left: 620px;
+  }
   
 
   .top a:hover {
@@ -90,6 +48,29 @@
     color:black;
   }
 
+
+  /*Background*/
+
+  .containerOne {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 200px;
+    font-size: 3em;
+    font-family: 'Roboto Slab', serif ;
+    color: #caf0f8;
+  }
+
+
+
 /* image gallery */
   * {
     box-sizing: border-box;
@@ -98,7 +79,7 @@
   body {
     background-color: #f1f1f1;
     padding: 20px;
-    font-family: Arial;
+    
   }
   
  
@@ -110,6 +91,9 @@
   h1 {
     font-size: 50px;
     word-break: break-all;
+    font-family: 'Roboto Slab', serif;
+    color: #03045e;
+    
   }
   
   .row {
@@ -151,37 +135,248 @@
     }
   }
 
-/* newsletter */
+  /* newsletter */
 
 form {
-    border: 4px solid #f1f1f1;
+  border: 4px solid #f1f1f1;
+}
+
+
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+  color: #03045e;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+   /* Map */
+  
+   .location {
+    border-top: 1px solid #90e0ef;
+    float: left;
+    text-align: center;
+    color:#03045e ;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+   
   }
   
- 
-  .container {
-    padding: 20px;
-    background-color: #f1f1f1;
+  .map {
+    padding: 20px 20px 20px 20px;
+    
   }
   
-  input[type=text], input[type=submit] {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
+  .para{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  
+  
+  }
+
+   /* Footer */
+  
+   *, *:before, *:after {
     box-sizing: border-box;
   }
   
-  input[type=checkbox] {
-    margin-top: 16px;
+  html {
+    font-size: 100%;
   }
   
-  input[type=submit] {
-    background-color: #4CAF50;
+  body {
+    font-family: roboto-slab, acumin-pro, system-ui, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    align-items: start;
+    min-height: 100vh;
+  }
+  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #caf0f8;
+    border-top: 1px solid #90e0ef;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: 'Roboto-Slab', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #999;
+  }
+  
+  
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+      flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: #999;
+  }
+  
+  .nav__ul--extra {
+    column-count: 1;
+    column-gap: 0.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart {
+    color: tomato;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+
+
+
+   /* Icons */ 
+  
+  
+
+   .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
     color: white;
-    border: none;
   }
   
-  input[type=submit]:hover {
-    opacity: 0.8;
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
   }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
